@@ -59,7 +59,14 @@ Below a list of optional properties:
 
 ## Dependencies
 
-None.
+### Test Kitchen dependencies
+
+* Virtualbox
+* Vagrant
+* Ruby 2.*
+* test-kitchen gem
+* kitchen-vagrant gem
+* kitchen-ansible gem
 
 ## Test Kitchen
 
