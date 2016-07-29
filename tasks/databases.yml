@@ -3,7 +3,7 @@
 - name: Manage database(s)
   mysql_db:
     name: "{{ item.name }}"
-    state: "{{ item.state | default('present') }}"
+    state: "{{ item.state }}"
     login_host: "{{ item.host | default('localhost') }}"
     login_user: "{{ item.login_user | default('') }}"
     login_password: "{{ item.login_password | default('')}}"
