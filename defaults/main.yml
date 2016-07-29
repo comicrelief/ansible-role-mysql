@@ -1,0 +1,12 @@
+---
+
+mysql_users:
+  - name: test
+    password: test
+    priv: test.*:ALL,GRANT
+    append_privs: yes
+    state: present
+
+mysql_databases:
+  - name: test
+    state: present

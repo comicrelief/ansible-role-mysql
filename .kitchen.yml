@@ -1,0 +1,16 @@
+---
+driver:
+  name: vagrant
+
+provisioner:
+  name: ansible_playbook
+  hosts: test-kitchen
+  require_ansible_repo: true
+  ansible_verbose: true
+  ansible_version: latest
+
+platforms:
+  - name: ubuntu-14.04
+
+suites:
+  - name: default

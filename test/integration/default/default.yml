@@ -1,0 +1,12 @@
+---
+
+- hosts: test-kitchen
+  become_user: sudo
+  roles:
+    - ansible-role-mysql
+  pre_tasks:
+    - name: Install mysql server
+      apt:
+        name: mysql-server
+        update_cache: yes
+        state: present

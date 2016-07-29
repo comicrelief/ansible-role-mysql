@@ -1,0 +1,9 @@
+---
+
+- include: deps.yml
+
+- include: databases.yml
+  when: mysql_databases is defined
+
+- include: users.yml
+  when: mysql_users is defined

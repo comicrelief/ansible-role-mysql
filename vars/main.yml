@@ -1,0 +1,10 @@
+---
+
+mysql_dependencies:
+  - python-dev
+  - libmysqlclient-dev
+  - python-pip
+  - mysql-client
+
+mysql_pip_packages:
+  - MYSQL-python

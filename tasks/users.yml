@@ -1,0 +1,15 @@
+---
+
+- name: Manage MySQL users
+  mysql_user:
+    name: "{{ item.name }}"
+    password: "{{ item.password }}"
+    priv: "{{ item.priv | default('*.*:ALL,GRANT') }}"
+    append_privs: "{{ item.append_privs | default('no') }}"
+    host: "{{ item.host | default('localhost') }}"
+    login_host: "{{ item.login_host | default('localhost') }}"
+    login_user: "{{ item.login_user | default('') }}"
+    login_password: "{{ item.login_password | default('') }}"
+    login_port: "{{ item.login_port | default('3306') }}"
+    state: "{{ item.state }}"
+  with_items: "{{ mysql_users }}"
