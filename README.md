@@ -57,7 +57,7 @@ Below a list of optional properties:
 * login_password - login_user's password (default: *''*)
 * login_port - login_host's port (default: *3306*)
 
-## dependencies
+## Dependencies
 
 None.
 
