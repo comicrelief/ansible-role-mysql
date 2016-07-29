@@ -7,4 +7,5 @@
     login_host: "{{ item.host | default('localhost') }}"
     login_user: "{{ item.login_user | default('') }}"
     login_password: "{{ item.login_password | default('')}}"
+    login_port: "{{ item.login_port | default('3306') }}"
   with_items: "{{ mysql_databases }}"
