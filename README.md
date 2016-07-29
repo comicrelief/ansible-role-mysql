@@ -84,7 +84,7 @@ Then it's time to apply your changes by running:
 $ kitchen converge
 ```
 
-You can check either your user or database by logging in the VM:
+You can check either your user or database by logging in to the VM:
 
 ```
 $ kitchen login
