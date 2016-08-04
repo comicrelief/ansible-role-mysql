@@ -43,7 +43,7 @@ Below a list of optional properties:
 * login_password - login_user's password (default: *''*)
 * login_port - login_host's port (default: *3306*)
 
-**mysql_db** - Dictionary of MySQL databases to be addedd to your host.
+**mysql_databases** - Dictionary of MySQL databases to be addedd to your host.
 
 Below a list of required properties:
 
