@@ -8,6 +8,7 @@ provisioner:
   require_ansible_repo: true
   ansible_verbose: true
   ansible_version: latest
+  group_vars_path: local
 
 platforms:
   - name: ubuntu-14.04
