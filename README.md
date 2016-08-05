@@ -72,6 +72,8 @@ Below a list of optional properties:
 
 The role comes with a test environment built with *Test Kitchen*.
 
+*Note* - If you want to set your variables to run some tests, you'll find a file called `test-kitchen.yml` in the `local` directory.
+
 First, you have to create your VM:
 
 ```
